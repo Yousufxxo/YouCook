@@ -1,0 +1,68 @@
+body{
+    background-image: url(img/gallery_03.jpg);
+    background-size: cover;
+}
+
+.nav{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700px;  
+    padding: 0 20px;
+}
+.text{
+    visibility: hidden;
+    color: black;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+p{
+    font-weight: bold;
+}
+.h3text{
+    font-weight: 100%;
+    font-family: "Trirong", serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+.picture{
+    position: relative;
+  }
+h2{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+section{
+    margin:0 auto;
+    background-color: transparent;
+    padding:0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+}
+img {
+    object-fit: cover;
+    height: 100%;
+    padding: 5px;
+    transition: 2s ease-in-out;
+    border-radius: 10px;
+}
+.picture:hover .text {
+    transform: scale(1.1);
+    visibility: visible;
+}
+img:hover{
+    transform: scale(0.9);
+     backdrop-filter: blur(15px);
+   }
